@@ -17,6 +17,11 @@ public:
     ~XXManager();
     
     void testForEach();
+    void testAutoType();
+    void testLambda();
+    auto testPostposition(int x, int y) -> int;
+    void testPointNull();
+    void testInherit();//继承
 };
 
 

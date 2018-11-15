@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A1119A7219D5D6D00C6337C /* XX1_Function.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A1119A5219D5D6D00C6337C /* XX1_Function.cpp */; };
+		9A1119AB219D6C5300C6337C /* XX2_Lambda.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A1119A9219D6C5300C6337C /* XX2_Lambda.cpp */; };
 		9A6234F5219AC265003E1D86 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A6234F4219AC265003E1D86 /* main.cpp */; };
 		9A62351A219ACC52003E1D86 /* XXManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A623518219ACC52003E1D86 /* XXManager.cpp */; };
 		9A623547219AD062003E1D86 /* XXTiles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A62353F219ACD2C003E1D86 /* XXTiles.framework */; };
@@ -42,6 +44,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9A1119A5219D5D6D00C6337C /* XX1_Function.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = XX1_Function.cpp; sourceTree = "<group>"; };
+		9A1119A6219D5D6D00C6337C /* XX1_Function.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = XX1_Function.hpp; sourceTree = "<group>"; };
+		9A1119A9219D6C5300C6337C /* XX2_Lambda.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = XX2_Lambda.cpp; sourceTree = "<group>"; };
+		9A1119AA219D6C5300C6337C /* XX2_Lambda.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = XX2_Lambda.hpp; sourceTree = "<group>"; };
 		9A6234F1219AC265003E1D86 /* XXCPlusPlus */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = XXCPlusPlus; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A6234F4219AC265003E1D86 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		9A623518219ACC52003E1D86 /* XXManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XXManager.cpp; sourceTree = "<group>"; };
@@ -61,6 +67,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A1119A4219D5D5400C6337C /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				9A1119A5219D5D6D00C6337C /* XX1_Function.cpp */,
+				9A1119A6219D5D6D00C6337C /* XX1_Function.hpp */,
+			);
+			path = Functions;
+			sourceTree = "<group>";
+		};
+		9A1119A8219D6C3D00C6337C /* Lambda */ = {
+			isa = PBXGroup;
+			children = (
+				9A1119A9219D6C5300C6337C /* XX2_Lambda.cpp */,
+				9A1119AA219D6C5300C6337C /* XX2_Lambda.hpp */,
+			);
+			path = Lambda;
+			sourceTree = "<group>";
+		};
 		9A6234E8219AC265003E1D86 = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +124,8 @@
 		9A623517219ACC52003E1D86 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				9A1119A4219D5D5400C6337C /* Functions */,
+				9A1119A8219D6C3D00C6337C /* Lambda */,
 				9A623518219ACC52003E1D86 /* XXManager.cpp */,
 				9A623519219ACC52003E1D86 /* XXManager.h */,
 			);
@@ -202,6 +228,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A1119A7219D5D6D00C6337C /* XX1_Function.cpp in Sources */,
+				9A1119AB219D6C5300C6337C /* XX2_Lambda.cpp in Sources */,
 				9A6234F5219AC265003E1D86 /* main.cpp in Sources */,
 				9A62351A219ACC52003E1D86 /* XXManager.cpp in Sources */,
 			);

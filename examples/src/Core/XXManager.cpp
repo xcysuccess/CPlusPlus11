@@ -4,17 +4,36 @@
 //
 //  Created by tomxiang on 2018/11/13.
 //  Copyright © 2018年 tomxiang. All rights reserved.
-//
+//  https://www.kancloud.cn/wangshubo1989/new-characteristics/99704
 
 #include "XXManager.h"
 #include <XXTiles/XXTiles.h>
+#include <iostream>
+#include <thread>
+#include <vector>
+
+using namespace std;
+
+class Base{
+public:
+    virtual void f(short){
+        std::cout << "B::f" << std::endl;
+    }
+};
+
+class D:public Base{
+public:
+    virtual void f(int) {
+        std::cout << "D::f" << std::endl;
+    }
+};
 
 XXManager::XXManager(){
     printf(__func__);
 }
 XXManager::~XXManager(){
     printf(__func__);
-    printf("\n");
+    cout << std::endl;
 }
 
 void XXManager::testForEach(){
@@ -25,3 +44,42 @@ void XXManager::testForEach(){
     }
     printf("testForEach结果:%d\n",sum);
 }
+
+void XXManager::testAutoType(){
+    cout << "testAutoType:";
+//    vector<int> vec(6,10);
+    vector<int> vec = {7, 5, 16, 8};
+    for(auto iterAuto = vec.begin();iterAuto != vec.end(); ++iterAuto) {
+        cout << *iterAuto << " ";
+    }
+    cout << std::endl;
+}
+
+void XXManager::testLambda(){
+    auto func = [](int i){
+        return i+4;
+    };
+    cout << "testLambda:";
+    cout << func(10) << std::endl;
+}
+
+auto XXManager::testPostposition(int x, int y) -> int{
+    return x + y;
+}
+void XXManager::testPointNull(){
+    int *p1 = NULL;
+    int *p = nullptr;
+    if(p == p1){
+        cout << "p==p1" << endl;
+    }else{
+        cout << "p!=p1" << endl;
+    }
+}
+
+void XXManager::testInherit(){
+    cout<<"testInherit"<<endl;
+    D p;
+    p.f(5);
+}
+
+
