@@ -12,6 +12,12 @@
 		9A6234F5219AC265003E1D86 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A6234F4219AC265003E1D86 /* main.cpp */; };
 		9A62351A219ACC52003E1D86 /* XXManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A623518219ACC52003E1D86 /* XXManager.cpp */; };
 		9A623547219AD062003E1D86 /* XXTiles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A62353F219ACD2C003E1D86 /* XXTiles.framework */; };
+		9A73693C219EAC6E0015ADEC /* XX_OverrideFinal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A73693A219EAC6E0015ADEC /* XX_OverrideFinal.cpp */; };
+		9A736943219FDDD00015ADEC /* XX_Thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A736941219FDDD00015ADEC /* XX_Thread.cpp */; };
+		9A73694621A0010F0015ADEC /* XX_ThreadBind.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A73694421A0010F0015ADEC /* XX_ThreadBind.cpp */; };
+		9A73694A21A010360015ADEC /* XX_InitializerList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A73694821A010360015ADEC /* XX_InitializerList.cpp */; };
+		9A73694E21A015570015ADEC /* XX_ThreadAdvanced.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A73694C21A015570015ADEC /* XX_ThreadAdvanced.cpp */; };
+		9A73695221A041AA0015ADEC /* XX_ThreadAdvanced2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A73695021A041AA0015ADEC /* XX_ThreadAdvanced2.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,18 @@
 		9A623518219ACC52003E1D86 /* XXManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XXManager.cpp; sourceTree = "<group>"; };
 		9A623519219ACC52003E1D86 /* XXManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXManager.h; sourceTree = "<group>"; };
 		9A62353A219ACD2C003E1D86 /* XXTiles.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = XXTiles.xcodeproj; path = ../../thirdparty/XXTiles/XXTiles.xcodeproj; sourceTree = "<group>"; };
+		9A73693A219EAC6E0015ADEC /* XX_OverrideFinal.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = XX_OverrideFinal.cpp; sourceTree = "<group>"; };
+		9A73693B219EAC6E0015ADEC /* XX_OverrideFinal.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = XX_OverrideFinal.hpp; sourceTree = "<group>"; };
+		9A736941219FDDD00015ADEC /* XX_Thread.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = XX_Thread.cpp; sourceTree = "<group>"; };
+		9A736942219FDDD00015ADEC /* XX_Thread.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = XX_Thread.hpp; sourceTree = "<group>"; };
+		9A73694421A0010F0015ADEC /* XX_ThreadBind.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = XX_ThreadBind.cpp; sourceTree = "<group>"; };
+		9A73694521A0010F0015ADEC /* XX_ThreadBind.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = XX_ThreadBind.hpp; sourceTree = "<group>"; };
+		9A73694821A010360015ADEC /* XX_InitializerList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = XX_InitializerList.cpp; sourceTree = "<group>"; };
+		9A73694921A010360015ADEC /* XX_InitializerList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = XX_InitializerList.hpp; sourceTree = "<group>"; };
+		9A73694C21A015570015ADEC /* XX_ThreadAdvanced.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = XX_ThreadAdvanced.cpp; sourceTree = "<group>"; };
+		9A73694D21A015570015ADEC /* XX_ThreadAdvanced.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = XX_ThreadAdvanced.hpp; sourceTree = "<group>"; };
+		9A73695021A041AA0015ADEC /* XX_ThreadAdvanced2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = XX_ThreadAdvanced2.cpp; sourceTree = "<group>"; };
+		9A73695121A041AA0015ADEC /* XX_ThreadAdvanced2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = XX_ThreadAdvanced2.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,10 +142,14 @@
 		9A623517219ACC52003E1D86 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				9A736923219E578F0015ADEC /* Manager */,
 				9A1119A4219D5D5400C6337C /* Functions */,
 				9A1119A8219D6C3D00C6337C /* Lambda */,
-				9A623518219ACC52003E1D86 /* XXManager.cpp */,
-				9A623519219ACC52003E1D86 /* XXManager.h */,
+				9A736939219EAB660015ADEC /* OverrideFinal */,
+				9A736940219FDDC10015ADEC /* ThreadBase */,
+				9A73694721A0100C0015ADEC /* InitializerList */,
+				9A73694B21A014160015ADEC /* ThreadAdvanced */,
+				9A73694F21A0418E0015ADEC /* ThreadAdvanced2 */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -153,6 +175,62 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A736923219E578F0015ADEC /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				9A623518219ACC52003E1D86 /* XXManager.cpp */,
+				9A623519219ACC52003E1D86 /* XXManager.h */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		9A736939219EAB660015ADEC /* OverrideFinal */ = {
+			isa = PBXGroup;
+			children = (
+				9A73693A219EAC6E0015ADEC /* XX_OverrideFinal.cpp */,
+				9A73693B219EAC6E0015ADEC /* XX_OverrideFinal.hpp */,
+			);
+			path = OverrideFinal;
+			sourceTree = "<group>";
+		};
+		9A736940219FDDC10015ADEC /* ThreadBase */ = {
+			isa = PBXGroup;
+			children = (
+				9A736941219FDDD00015ADEC /* XX_Thread.cpp */,
+				9A736942219FDDD00015ADEC /* XX_Thread.hpp */,
+				9A73694421A0010F0015ADEC /* XX_ThreadBind.cpp */,
+				9A73694521A0010F0015ADEC /* XX_ThreadBind.hpp */,
+			);
+			path = ThreadBase;
+			sourceTree = "<group>";
+		};
+		9A73694721A0100C0015ADEC /* InitializerList */ = {
+			isa = PBXGroup;
+			children = (
+				9A73694821A010360015ADEC /* XX_InitializerList.cpp */,
+				9A73694921A010360015ADEC /* XX_InitializerList.hpp */,
+			);
+			path = InitializerList;
+			sourceTree = "<group>";
+		};
+		9A73694B21A014160015ADEC /* ThreadAdvanced */ = {
+			isa = PBXGroup;
+			children = (
+				9A73694C21A015570015ADEC /* XX_ThreadAdvanced.cpp */,
+				9A73694D21A015570015ADEC /* XX_ThreadAdvanced.hpp */,
+			);
+			path = ThreadAdvanced;
+			sourceTree = "<group>";
+		};
+		9A73694F21A0418E0015ADEC /* ThreadAdvanced2 */ = {
+			isa = PBXGroup;
+			children = (
+				9A73695021A041AA0015ADEC /* XX_ThreadAdvanced2.cpp */,
+				9A73695121A041AA0015ADEC /* XX_ThreadAdvanced2.hpp */,
+			);
+			path = ThreadAdvanced2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +307,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A1119A7219D5D6D00C6337C /* XX1_Function.cpp in Sources */,
+				9A73694621A0010F0015ADEC /* XX_ThreadBind.cpp in Sources */,
+				9A73694E21A015570015ADEC /* XX_ThreadAdvanced.cpp in Sources */,
 				9A1119AB219D6C5300C6337C /* XX2_Lambda.cpp in Sources */,
 				9A6234F5219AC265003E1D86 /* main.cpp in Sources */,
 				9A62351A219ACC52003E1D86 /* XXManager.cpp in Sources */,
+				9A73695221A041AA0015ADEC /* XX_ThreadAdvanced2.cpp in Sources */,
+				9A73693C219EAC6E0015ADEC /* XX_OverrideFinal.cpp in Sources */,
+				9A73694A21A010360015ADEC /* XX_InitializerList.cpp in Sources */,
+				9A736943219FDDD00015ADEC /* XX_Thread.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

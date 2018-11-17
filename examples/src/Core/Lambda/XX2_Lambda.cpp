@@ -7,11 +7,7 @@
 //
 
 #include "XX2_Lambda.hpp"
-#include <functional>
-#include <iostream>
-#include <vector>
-
-using namespace std;
+#include <XXTiles/XXTiles.h>
 
 class CTest{
 public:
@@ -21,7 +17,12 @@ public:
         vector<int> vctTemp;
         vctTemp.push_back(1);
         vctTemp.push_back(2);
-        
+        {
+            auto func = [](int i){
+                return i+4;
+            };
+            cout << func(10) << std::endl;
+        }
         // 无函数参考对象, 输出: 1 2
         {
             for_each(vctTemp.begin(), vctTemp.end(), [](int v){ cout << v << endl; });
@@ -60,15 +61,17 @@ public:
             for_each(vctTemp.begin(), vctTemp.end(), [=, &b](int v){ cout << v+a << endl; b++; });
             cout << b << endl;
         }
-        //
-        
-        
+        // 操作符重载函数参数按引用传递，输出：2 3
+        {
+            for_each(vctTemp.begin(), vctTemp.end(), [](int &v){ v++; });
+            for_each(vctTemp.begin(), vctTemp.end(), [](int v){ cout << v << endl; });
+        }
     }
-    
-    
-    
-    
 private:
     int m_nData;
-    
 };
+
+void testLambda(){
+    SP<CTest> pCTest = SP<CTest>(new CTest());
+    pCTest->TestLambda();
+}

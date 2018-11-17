@@ -24,5 +24,6 @@ public:
     void testInherit();//继承
 };
 
+void testManager();
 
 #endif /* XXManager_hpp */

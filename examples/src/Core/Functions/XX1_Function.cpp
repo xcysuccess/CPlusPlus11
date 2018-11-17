@@ -7,10 +7,7 @@
 //
 
 #include "XX1_Function.hpp"
-
-#include <functional>
-#include <iostream>
-using namespace std;
+#include <XXTiles/XXTiles.h>
 
 std::function<int(int)> Functional;
 

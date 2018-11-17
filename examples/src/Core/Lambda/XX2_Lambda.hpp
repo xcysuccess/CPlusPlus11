@@ -11,4 +11,7 @@
 
 #include <stdio.h>
 
+void testLambda();
+
+
 #endif /* XX2_Lambda_hpp */

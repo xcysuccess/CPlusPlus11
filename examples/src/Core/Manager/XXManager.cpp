@@ -8,11 +8,6 @@
 
 #include "XXManager.h"
 #include <XXTiles/XXTiles.h>
-#include <iostream>
-#include <thread>
-#include <vector>
-
-using namespace std;
 
 class Base{
 public:
@@ -83,3 +78,19 @@ void XXManager::testInherit(){
 }
 
 
+void testManager(){
+    SP<XXManager> manager = SP<XXManager>(new XXManager());
+    //foreach
+    manager->testForEach();
+    //auto
+    manager->testAutoType();
+    //Lambda
+    manager->testLambda();
+    //后置返回值
+    int sum = manager->testPostposition(10,5);
+    std::cout<<"testPostposition:sum:"<<sum<<std::endl;
+    //testNull
+    manager->testPointNull();
+    //testInherit:继承
+    manager->testInherit();
+}
