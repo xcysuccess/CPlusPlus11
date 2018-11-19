@@ -18,6 +18,10 @@
 		9A73694A21A010360015ADEC /* XX_InitializerList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A73694821A010360015ADEC /* XX_InitializerList.cpp */; };
 		9A73694E21A015570015ADEC /* XX_ThreadAdvanced.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A73694C21A015570015ADEC /* XX_ThreadAdvanced.cpp */; };
 		9A73695221A041AA0015ADEC /* XX_ThreadAdvanced2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A73695021A041AA0015ADEC /* XX_ThreadAdvanced2.cpp */; };
+		9A73695F21A25EF70015ADEC /* XX_CallBack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A73695D21A25EF70015ADEC /* XX_CallBack.cpp */; };
+		9A73696221A29AF80015ADEC /* XX_CallBack2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A73696021A29AF80015ADEC /* XX_CallBack2.cpp */; };
+		9A73697121A2BB960015ADEC /* XX_Array.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A73696F21A2BB960015ADEC /* XX_Array.cpp */; };
+		9A73697521A2E35C0015ADEC /* XX_RValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A73697321A2E35C0015ADEC /* XX_RValue.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +75,14 @@
 		9A73694D21A015570015ADEC /* XX_ThreadAdvanced.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = XX_ThreadAdvanced.hpp; sourceTree = "<group>"; };
 		9A73695021A041AA0015ADEC /* XX_ThreadAdvanced2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = XX_ThreadAdvanced2.cpp; sourceTree = "<group>"; };
 		9A73695121A041AA0015ADEC /* XX_ThreadAdvanced2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = XX_ThreadAdvanced2.hpp; sourceTree = "<group>"; };
+		9A73695D21A25EF70015ADEC /* XX_CallBack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = XX_CallBack.cpp; sourceTree = "<group>"; };
+		9A73695E21A25EF70015ADEC /* XX_CallBack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = XX_CallBack.hpp; sourceTree = "<group>"; };
+		9A73696021A29AF80015ADEC /* XX_CallBack2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = XX_CallBack2.cpp; sourceTree = "<group>"; };
+		9A73696121A29AF80015ADEC /* XX_CallBack2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = XX_CallBack2.hpp; sourceTree = "<group>"; };
+		9A73696F21A2BB960015ADEC /* XX_Array.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = XX_Array.cpp; sourceTree = "<group>"; };
+		9A73697021A2BB960015ADEC /* XX_Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = XX_Array.hpp; sourceTree = "<group>"; };
+		9A73697321A2E35C0015ADEC /* XX_RValue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = XX_RValue.cpp; sourceTree = "<group>"; };
+		9A73697421A2E35C0015ADEC /* XX_RValue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = XX_RValue.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +162,9 @@
 				9A73694721A0100C0015ADEC /* InitializerList */,
 				9A73694B21A014160015ADEC /* ThreadAdvanced */,
 				9A73694F21A0418E0015ADEC /* ThreadAdvanced2 */,
+				9A73695321A24B0F0015ADEC /* CallBack */,
+				9A73696E21A2BB790015ADEC /* Array */,
+				9A73697221A2E3430015ADEC /* RightValue */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -233,6 +248,35 @@
 			path = ThreadAdvanced2;
 			sourceTree = "<group>";
 		};
+		9A73695321A24B0F0015ADEC /* CallBack */ = {
+			isa = PBXGroup;
+			children = (
+				9A73695D21A25EF70015ADEC /* XX_CallBack.cpp */,
+				9A73695E21A25EF70015ADEC /* XX_CallBack.hpp */,
+				9A73696021A29AF80015ADEC /* XX_CallBack2.cpp */,
+				9A73696121A29AF80015ADEC /* XX_CallBack2.hpp */,
+			);
+			path = CallBack;
+			sourceTree = "<group>";
+		};
+		9A73696E21A2BB790015ADEC /* Array */ = {
+			isa = PBXGroup;
+			children = (
+				9A73696F21A2BB960015ADEC /* XX_Array.cpp */,
+				9A73697021A2BB960015ADEC /* XX_Array.hpp */,
+			);
+			path = Array;
+			sourceTree = "<group>";
+		};
+		9A73697221A2E3430015ADEC /* RightValue */ = {
+			isa = PBXGroup;
+			children = (
+				9A73697321A2E35C0015ADEC /* XX_RValue.cpp */,
+				9A73697421A2E35C0015ADEC /* XX_RValue.hpp */,
+			);
+			path = RightValue;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -308,6 +352,9 @@
 			files = (
 				9A1119A7219D5D6D00C6337C /* XX1_Function.cpp in Sources */,
 				9A73694621A0010F0015ADEC /* XX_ThreadBind.cpp in Sources */,
+				9A73695F21A25EF70015ADEC /* XX_CallBack.cpp in Sources */,
+				9A73696221A29AF80015ADEC /* XX_CallBack2.cpp in Sources */,
+				9A73697121A2BB960015ADEC /* XX_Array.cpp in Sources */,
 				9A73694E21A015570015ADEC /* XX_ThreadAdvanced.cpp in Sources */,
 				9A1119AB219D6C5300C6337C /* XX2_Lambda.cpp in Sources */,
 				9A6234F5219AC265003E1D86 /* main.cpp in Sources */,
@@ -315,6 +362,7 @@
 				9A73695221A041AA0015ADEC /* XX_ThreadAdvanced2.cpp in Sources */,
 				9A73693C219EAC6E0015ADEC /* XX_OverrideFinal.cpp in Sources */,
 				9A73694A21A010360015ADEC /* XX_InitializerList.cpp in Sources */,
+				9A73697521A2E35C0015ADEC /* XX_RValue.cpp in Sources */,
 				9A736943219FDDD00015ADEC /* XX_Thread.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

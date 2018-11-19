@@ -4,7 +4,7 @@
 //
 //  Created by tomxiang on 2018/11/13.
 //  Copyright © 2018年 tomxiang. All rights reserved.
-//
+//  https://www.kancloud.cn/wangshubo1989/new-characteristics/99704
 
 #include <iostream>
 #include <XXTiles/XXTiles.h>
@@ -18,6 +18,10 @@
 #include "XX_InitializerList.hpp"
 #include "XX_ThreadAdvanced.hpp"
 #include "XX_ThreadAdvanced2.hpp"
+#include "XX_CallBack.hpp"
+#include "XX_CallBack2.hpp"
+#include "XX_Array.hpp"
+#include "XX_RValue.hpp"
 
 int main(int argc, const char * argv[]) {
     //testManager
@@ -57,6 +61,19 @@ int main(int argc, const char * argv[]) {
     testThreadAdvanced2();
     testAdvanced2_2();
     
+    //testCallBack
+    cout << "-----------testCallBack-----------" << std::endl;
+    testCallBack();
+    //存储回调
+    testCallBack2();
+    
+    //testArray
+    cout << "-----------testArray-----------" << std::endl;
+    testArray();
+    
+    //testRValue
+    cout << "-----------testRValue-----------" <<endl;
+    testRValue();
+    
     return 0;
-
 }
